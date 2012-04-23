@@ -1,0 +1,11 @@
+*** Settings ***
+Documentation  This resource file contains common and global variables
+Library  SeleniumLibrary  5  localhost
+
+*** Test Cases ***
+
+Houston Website opens
+  Open Browser  http://www.houston-inc.com/
+  Maximize Browser Window
+  Title Should Be  Etusivu | Houston Inc.
+  [Teardown]  Close Browser
