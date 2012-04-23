@@ -40,7 +40,9 @@
                         <configuration>
                             <xvfbExecutable>Xvnc</xvfbExecutable>
                             <logFile>${project.build.directory}/selenium/xvnc.log</logFile>
-                            <options>-ac</options>
+                            <options>
+                                <option>-ac</option>
+                            </options>
                             <xauthEnabled>false</xauthEnabled>
                         </configuration>
                     </execution>
